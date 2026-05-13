@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg,#0f172a,#1e293b,#111827);
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Background Glow */
+.bg-glow{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: #2563eb;
+    border-radius: 50%;
+    filter: blur(120px);
+    opacity: 0.3;
+    z-index: 0;
+}
+
+/* Calculator Box */
+.calculator-container{
+    position: relative;
+    z-index: 1;
+    width: 360px;
+    padding: 25px;
+    border-radius: 25px;
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255,255,255,0.1);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.35);
+}
+
+/* Header */
+.calculator-header{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.calculator-header h1{
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.calculator-header p{
+    color: #94a3b8;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Display */
+.display-box{
+    margin-bottom: 20px;
+}
+
+#display{
+    width: 100%;
+    height: 75px;
+    border: none;
+    outline: none;
+    border-radius: 18px;
+    padding: 15px;
+    font-size: 30px;
+    text-align: right;
+    background: rgba(255,255,255,0.1);
+    color: #ffffff;
+    box-shadow: inset 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Buttons Grid */
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 15px;
+}
+
+/* Buttons */
+button{
+    height: 65px;
+    border: none;
+    border-radius: 18px;
+    background: rgba(255,255,255,0.08);
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Hover */
+button:hover{
+    transform: translateY(-3px);
+    background: #2563eb;
+}
+
+/* Active */
+button:active{
+    transform: scale(0.95);
+}
+
+/* Operators */
+.operator{
+    background: #1d4ed8;
+}
+
+/* Equal Button */
+.equal{
+    background: #06b6d4;
+    color: #fff;
+}
+
+/* Zero Button */
+.zero{
+    grid-column: span 2;
+}
+
+/* Responsive */
+@media(max-width:400px){
+
+    .calculator-container{
+        width: 95%;
+        padding: 20px;
+    }
+
+    button{
+        height: 60px;
+        font-size: 20px;
+    }
+
+    #display{
+        height: 70px;
+        font-size: 26px;
+    }
+}
