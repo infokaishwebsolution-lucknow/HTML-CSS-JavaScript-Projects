@@ -1,2 +1,20 @@
-# HTML-CSS-JavaScript-Projects
-Frontend web development projects by KAiSH Computer Institute using HTML, CSS, and JavaScript for practical learning, portfolio building, and real-world website development.
+# HTML CSS JavaScript Projects
+
+A collection of responsive and modern frontend web development projects using HTML, CSS, and JavaScript.
+
+## Projects Included
+- Landing Pages
+- Portfolio Websites
+- Login Forms
+- Responsive Navbar
+- JavaScript Mini Projects
+- Animation Effects
+- Interactive UI Components
+
+## Technologies Used
+- HTML5
+- CSS3
+- JavaScript
+
+## Developed By
+KAiSH Computer Institute
